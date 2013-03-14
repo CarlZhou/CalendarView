@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DailyClassViewController.h"
+#import "DailyCalendarTableViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +22,21 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    DailyClassViewController *dailyClassViewController = [[DailyClassViewController alloc] init];
+    DailyCalendarTableViewController *testDailyCal = [[DailyCalendarTableViewController alloc] init];
+    
+    UINavigationController *rootNavController = [[UINavigationController alloc] initWithRootViewController:testDailyCal];
+    
+    [self.window setRootViewController:rootNavController];
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    if (!context) {
+        // Handle the error.
+    }
+    dailyClassViewController.managedObjectContext = context;
+    testDailyCal.managedObjectContext = context;
+    
     return YES;
 }
 

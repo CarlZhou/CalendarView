@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C2034" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="courseEndDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="courseLength" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="courseStartDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="courseStartTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="courseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enrollCapacity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="enrollTotal" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="instructor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lectureNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="place" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weeklyTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="160" positionY="192" width="128" height="225"/>
+    </elements>
 </model>
