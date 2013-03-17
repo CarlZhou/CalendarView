@@ -58,6 +58,7 @@
     [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[components hour] inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
 
     [self.navigationItem setTitle:[self getWeekday:[components weekday]]];
+    self.timeTableWeekday = [self getWeekday:[components weekday]];
 
     [self drawCourseSchedule];
 }
@@ -173,14 +174,13 @@
 
     for (Course *course in self.fetchedCourses)
     {
-        NSLog(@"%@", course.courseStartTime);
 
 //        UIButton *test = [UIButton buttonWithType:UIButtonTypeCustom];
 //        [test setTitle:course.courseTitle forState:UIControlStateNormal];
 //        [test setBackgroundImage:[[UIImage imageNamed:@"greenButton@2x.png"] stretchableImageWithLeftCapWidth:36 topCapHeight:36] forState:UIControlStateNormal];
 //        [test setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 //        [test setAlpha:0.8];
-        
+
 
         // Get Course Frame
         NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -190,11 +190,23 @@
         CGFloat courseStartHeight = courseStartPercentage * (self.tableView.contentSize.height-80) + 40;
         CGFloat courseRectHeight = [course.courseLength integerValue]/1440.0 * (self.tableView.contentSize.height-80) + 40;
         CGRect courseFrame = CGRectMake(44, courseStartHeight, self.tableView.frame.size.width-44, courseRectHeight);
-        
+
         DailyCalendarCourseView *test = [[DailyCalendarCourseView alloc] initWithFrame:courseFrame];
         [test.title setText:course.courseTitle];
-        [test.type setText:[NSString stringWithFormat:@"Lec-%@", course.lectureNumber]];
-        
+        [test.type setText:[NSString stringWithFormat:@"Lec - %@", course.lectureNumber]];
+
+        // Set course time string
+        NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
+        [dateformatter setDateFormat:@"hh:mm a"];
+        [dateformatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+        NSString *courseStartTimeString = [dateformatter stringFromDate:course.courseStartTime];
+        NSTimeInterval secondsOfCourseLength = [course.courseLength doubleValue] * 60;
+        NSString *courseEndTimeString = [dateformatter stringFromDate:[course.courseStartTime dateByAddingTimeInterval:secondsOfCourseLength]];
+        NSString *courseTimeString = [NSString stringWithFormat:@"%@ - %@", courseStartTimeString, courseEndTimeString];
+        [test.time setText:courseTimeString];
+
+        [test.place setText:course.place];
+        [test.instructor setText:course.instructor];
         [self.tableView addSubview:test];
     }
 
@@ -208,6 +220,7 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"courseStartTime" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [request setSortDescriptors:sortDescriptors];
+
     NSError *error = nil;
     NSMutableArray *mutableFetchResults = [[self.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
     if (mutableFetchResults == nil) {

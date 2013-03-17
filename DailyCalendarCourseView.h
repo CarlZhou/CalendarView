@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UILabel *time;
 @property (nonatomic, strong) UILabel *type;
 @property (nonatomic, strong) UILabel *place;
+@property (nonatomic, strong) UILabel *instructor;
 
 @property (nonatomic, strong) UIImageView *background;
 

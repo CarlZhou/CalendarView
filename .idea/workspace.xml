@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f19e8df-980c-4b64-9e7a-7882ab515655" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/find.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime.xcodeproj/project.xcworkspace/xcuserdata/carlgwork.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/classTime.xcodeproj/project.xcworkspace/xcuserdata/carlgwork.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DailyCalendarCell.m" afterPath="$PROJECT_DIR$/DailyCalendarCell.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/classTime.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DailyCalendarCourseView.h" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DailyCalendarCourseView.m" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" afterPath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m" afterPath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime/classTime-Info.plist" afterPath="$PROJECT_DIR$/classTime/classTime-Info.plist" />
     </list>
     <ignored path="classTime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCourseViewController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AddCourseViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classTime/AddCourseViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="19" selection-start="6534" selection-end="6534" vertical-scroll-proportion="0.0">
+            <state line="151" column="8" selection-start="5318" selection-end="5318" vertical-scroll-proportion="-2.0632112">
               <folding />
             </state>
           </provider>
@@ -65,24 +63,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCourseCell.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AddCourseCell.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Course.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Course.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddCourseCell.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AddCourseCell.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,19 +81,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCourseSelectWeekDaysViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AddCourseSelectWeekDaysViewController.m">
+      <file leaf-file-name="DailyCalendarCourseView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DailyCalendarCourseView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="1" selection-start="4981" selection-end="4981" vertical-scroll-proportion="0.0">
+            <state line="33" column="25" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DailyCalendarTableViewController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DailyCalendarTableViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="295" selection-end="295" vertical-scroll-proportion="0.32692307">
+            <state line="221" column="49" selection-start="8292" selection-end="8292" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DailyCalendarTableViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="57" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DailyCalendarCourseView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DailyCalendarCourseView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="50" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,8 +135,10 @@
         <option value="$PROJECT_DIR$/AddCourseCell.h" />
         <option value="$PROJECT_DIR$/AddCourseCell.m" />
         <option value="$PROJECT_DIR$/classTime/AddCourseViewController.h" />
-        <option value="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" />
         <option value="$PROJECT_DIR$/classTime/AddCourseViewController.m" />
+        <option value="$PROJECT_DIR$/DailyCalendarCourseView.h" />
+        <option value="$PROJECT_DIR$/DailyCalendarCourseView.m" />
+        <option value="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" />
         <option value="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m" />
       </list>
     </option>
@@ -175,6 +175,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,7 +260,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,12 +314,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="1915" height="1058" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16060606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3345666" sideWeight="0.67070705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3345666" sideWeight="0.8393939" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23838384" sideWeight="0.9904913" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -329,7 +330,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -391,20 +391,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="5" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AddCourseSelectWeekDaysViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="1" selection-start="4981" selection-end="4981" vertical-scroll-proportion="0.0">
@@ -414,16 +400,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AddCourseSelectWeekDaysViewController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="53" selection-start="547" selection-end="547" vertical-scroll-proportion="0.7195767">
-          <folding />
-        </state>
+        <state line="24" column="53" selection-start="547" selection-end="547" vertical-scroll-proportion="0.7195767" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DailyCalendarCell.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AddCourseCell.h">
@@ -443,13 +425,6 @@
     <entry file="file://$PROJECT_DIR$/classTime/AppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="0" selection-start="7152" selection-end="7152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="61" selection-start="432" selection-end="432" vertical-scroll-proportion="0.35614526">
           <folding />
         </state>
       </provider>
@@ -489,16 +464,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classTime/AddCourseViewController.m">
+    <entry file="file://$PROJECT_DIR$/DailyCalendarCourseView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="19" selection-start="6534" selection-end="6534" vertical-scroll-proportion="0.0">
+        <state line="16" column="50" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DailyCalendarCourseView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="25" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="57" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="295" selection-end="295" vertical-scroll-proportion="0.32692307">
+        <state line="221" column="49" selection-start="8292" selection-end="8292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classTime/AddCourseViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="8" selection-start="5318" selection-end="5318" vertical-scroll-proportion="-2.0632112">
           <folding />
         </state>
       </provider>

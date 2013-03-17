@@ -12,7 +12,8 @@
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) UIView *timeLineView;
-
 @property (strong, nonatomic) NSMutableArray *fetchedCourses;
+
+@property (strong, nonatomic) NSString *timeTableWeekday;
 
 @end
