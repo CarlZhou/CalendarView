@@ -26,6 +26,9 @@
         [self.scrollView setBackgroundColor:[UIColor lightGrayColor]];
 
         self.addCourseTableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width-20, self.view.frame.size.height-110+44+44)];
+        
+        NSLog(@"%f", self.view.frame.size.height);
+        
         self.addCourseTableView.dataSource = self;
         self.addCourseTableView.delegate = self;
         self.addCourseTableView.layer.cornerRadius = 5;
@@ -49,6 +52,13 @@
         [self.scrollView addSubview:self.saveBtn];
 
         [self.view addSubview:self.scrollView];
+        
+        
+        if (self.view.frame.size.height == 548)
+        {
+            [self.addCourseTableView setFrame:CGRectMake(10, 10, self.view.frame.size.width-20, self.view.frame.size.height-88-110+44+44)];
+            [self.saveBtn setFrame:CGRectMake(10, self.view.frame.size.height-110-88+44+44+20, self.view.frame.size.width-20, 44)];
+        }
     }
     return self;
 }
@@ -134,7 +144,37 @@
     }
     if (self.repeatCell.textField.text)
     {
-        [course setWeeklyTime:self.repeatCell.textField.text];
+        NSSortDescriptor* sortOrder = [NSSortDescriptor sortDescriptorWithKey: @"self" ascending:YES];
+        NSArray *sortArrary = [self.weekdaysSelectedView.selectedWeekdays sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortOrder]];
+        for (NSIndexPath *index in sortArrary)
+        {
+            switch (index.row)
+            {
+                case Sunday:
+                    course.isSunday = @1;
+                    break;
+                case Monday:
+                    course.isMonday = @1;
+                    break;
+                case Tuesday:
+                    course.isTuesday = @1;
+                    break;
+                case Wednesday:
+                    course.isWednesday = @1;
+                    break;
+                case Thursday:
+                    course.isThursday = @1;
+                    break;
+                case Friday:
+                    course.isFriday = @1;
+                    break;
+                case Saturday:
+                    course.isSaturday = @1;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
     else
     {
@@ -171,11 +211,11 @@
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"MM-dd-yyyy"];
         NSDate *endDate = [dateFormat dateFromString:self.endAtCell.textField.text];
-        [course setCourseStartDate:endDate];
+        [course setCourseEndDate:endDate];
     }
     else
     {
-        NSLog(@"No start date");
+        NSLog(@"No end date");
         return;
     }
     if (self.lectureNoCell.textField.text)

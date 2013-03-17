@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8EFD6A8916F54B8F002AC857 /* DailyCalendarCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6A8816F54B8F002AC857 /* DailyCalendarCourseView.m */; };
+		8EFD6A8C16F55B2F002AC857 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6A8B16F55B2F002AC857 /* Course.m */; };
 		C300D93416EFBDE600BFC043 /* DailyClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D93316EFBDE600BFC043 /* DailyClassViewController.m */; };
 		C300D94116EFC4FE00BFC043 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D94016EFC4FE00BFC043 /* AddCourseViewController.m */; };
 		C300D94716EFCBC000BFC043 /* DailyCalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D94616EFCBC000BFC043 /* DailyCalendarTableViewController.m */; };
@@ -57,7 +58,6 @@
 		C300D9AC16F0D92000BFC043 /* whiteButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = C300D98F16F0D92000BFC043 /* whiteButtonHighlight.png */; };
 		C300D9AD16F0D92000BFC043 /* whiteButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C300D99016F0D92000BFC043 /* whiteButtonHighlight@2x.png */; };
 		C300D9B316F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D9B216F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.m */; };
-		C300D9B916F1110D00BFC043 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D9B816F1110D00BFC043 /* Course.m */; };
 		C323695716EE6732000EFAE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C323695616EE6732000EFAE5 /* UIKit.framework */; };
 		C323695916EE6732000EFAE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C323695816EE6732000EFAE5 /* Foundation.framework */; };
 		C323695B16EE6732000EFAE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C323695A16EE6732000EFAE5 /* CoreGraphics.framework */; };
@@ -90,6 +90,8 @@
 /* Begin PBXFileReference section */
 		8EFD6A8716F54B8F002AC857 /* DailyCalendarCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarCourseView.h; sourceTree = "<group>"; };
 		8EFD6A8816F54B8F002AC857 /* DailyCalendarCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarCourseView.m; sourceTree = "<group>"; };
+		8EFD6A8A16F55B2F002AC857 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		8EFD6A8B16F55B2F002AC857 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C300D93216EFBDE600BFC043 /* DailyClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyClassViewController.h; sourceTree = "<group>"; };
 		C300D93316EFBDE600BFC043 /* DailyClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyClassViewController.m; sourceTree = "<group>"; };
 		C300D93F16EFC4FE00BFC043 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCourseViewController.h; path = classTime/AddCourseViewController.h; sourceTree = "<group>"; };
@@ -146,8 +148,6 @@
 		C300D99016F0D92000BFC043 /* whiteButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteButtonHighlight@2x.png"; sourceTree = "<group>"; };
 		C300D9B116F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseSelectWeekDaysViewController.h; sourceTree = "<group>"; };
 		C300D9B216F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseSelectWeekDaysViewController.m; sourceTree = "<group>"; };
-		C300D9B716F1110D00BFC043 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		C300D9B816F1110D00BFC043 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C323695316EE6732000EFAE5 /* classTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C323695616EE6732000EFAE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C323695816EE6732000EFAE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -201,8 +201,8 @@
 		C300D93516EFBDF500BFC043 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C300D9B716F1110D00BFC043 /* Course.h */,
-				C300D9B816F1110D00BFC043 /* Course.m */,
+				8EFD6A8A16F55B2F002AC857 /* Course.h */,
+				8EFD6A8B16F55B2F002AC857 /* Course.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -533,8 +533,8 @@
 				C300D94E16EFF88E00BFC043 /* WeeklyClassViewController.m in Sources */,
 				C300D95216F0015000BFC043 /* AddCourseCell.m in Sources */,
 				C300D9B316F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.m in Sources */,
-				C300D9B916F1110D00BFC043 /* Course.m in Sources */,
 				8EFD6A8916F54B8F002AC857 /* DailyCalendarCourseView.m in Sources */,
+				8EFD6A8C16F55B2F002AC857 /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +642,7 @@
 				INFOPLIST_FILE = "classTime/classTime-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -654,6 +655,7 @@
 				INFOPLIST_FILE = "classTime/classTime-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

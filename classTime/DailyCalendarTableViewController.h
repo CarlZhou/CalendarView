@@ -13,7 +13,11 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) UIView *timeLineView;
 @property (strong, nonatomic) NSMutableArray *fetchedCourses;
+@property (strong, nonatomic) NSMutableArray *coursesViews;
 
 @property (strong, nonatomic) NSString *timeTableWeekday;
+
+@property (strong, nonatomic) UISwipeGestureRecognizer *swipeLeft;
+@property (strong, nonatomic) UISwipeGestureRecognizer *swipeRight;
 
 @end

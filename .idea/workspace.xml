@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f19e8df-980c-4b64-9e7a-7882ab515655" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime.xcodeproj/project.xcworkspace/xcuserdata/carlgwork.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/classTime.xcodeproj/project.xcworkspace/xcuserdata/carlgwork.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DailyCalendarCourseView.h" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DailyCalendarCourseView.m" afterPath="$PROJECT_DIR$/DailyCalendarCourseView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" afterPath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m" afterPath="$PROJECT_DIR$/classTime/DailyCalendarTableViewController.m" />
     </list>
     <ignored path="classTime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -309,7 +304,11 @@
       <created>1363229470132</created>
       <updated>1363229470132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added custom course View">
+      <created>1363485469523</created>
+      <updated>1363485469523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -370,7 +369,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init class time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom course View" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -384,6 +383,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Init class time" />
+    <MESSAGE value="Added custom course View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

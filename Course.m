@@ -2,7 +2,7 @@
 //  Course.m
 //  classTime
 //
-//  Created by Carl on 2013-03-13.
+//  Created by Zian Zhou on 2013-03-16.
 //  Copyright (c) 2013 Carl. All rights reserved.
 //
 
@@ -11,17 +11,23 @@
 
 @implementation Course
 
-@dynamic courseTitle;
+@dynamic courseEndDate;
 @dynamic courseLength;
-@dynamic instructor;
-@dynamic weeklyTime;
-@dynamic place;
-@dynamic enrollCapacity;
-@dynamic enrollTotal;
 @dynamic courseScore;
 @dynamic courseStartDate;
-@dynamic courseEndDate;
-@dynamic lectureNumber;
 @dynamic courseStartTime;
+@dynamic courseTitle;
+@dynamic enrollCapacity;
+@dynamic enrollTotal;
+@dynamic instructor;
+@dynamic lectureNumber;
+@dynamic place;
+@dynamic isMonday;
+@dynamic isWednesday;
+@dynamic isTuesday;
+@dynamic isThursday;
+@dynamic isFriday;
+@dynamic isSaturday;
+@dynamic isSunday;
 
 @end
