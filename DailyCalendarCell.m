@@ -15,17 +15,17 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 39, 44)];
+        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 39, 80)];
         self.timeLabel.textAlignment = NSTextAlignmentRight;
         [self.timeLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:13]];
         [self.timeLabel setTextColor:[UIColor lightGrayColor]];
         [self.contentView addSubview:self.timeLabel];
         
-        self.centerLine = [[UIView alloc] initWithFrame:CGRectMake(44, 22, self.contentView.frame.size.width-44, 1)];
+        self.centerLine = [[UIView alloc] initWithFrame:CGRectMake(44, 40, self.contentView.frame.size.width-44, 1)];
         [self.centerLine setBackgroundColor:[UIColor lightGrayColor]];
         [self.contentView addSubview:self.centerLine];
         
-        self.bottomLine = [[UIView alloc] initWithFrame:CGRectMake(44, 43, self.contentView.frame.size.width-44, 1)];
+        self.bottomLine = [[UIView alloc] initWithFrame:CGRectMake(44, 79, self.contentView.frame.size.width-44, 1)];
         [self.bottomLine setBackgroundColor:[UIColor darkGrayColor]];
         [self.contentView addSubview:self.bottomLine];
         

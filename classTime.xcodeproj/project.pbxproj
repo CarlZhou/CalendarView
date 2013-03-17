@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EFD6A8916F54B8F002AC857 /* DailyCalendarCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD6A8816F54B8F002AC857 /* DailyCalendarCourseView.m */; };
 		C300D93416EFBDE600BFC043 /* DailyClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D93316EFBDE600BFC043 /* DailyClassViewController.m */; };
 		C300D94116EFC4FE00BFC043 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D94016EFC4FE00BFC043 /* AddCourseViewController.m */; };
 		C300D94716EFCBC000BFC043 /* DailyCalendarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C300D94616EFCBC000BFC043 /* DailyCalendarTableViewController.m */; };
@@ -87,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EFD6A8716F54B8F002AC857 /* DailyCalendarCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarCourseView.h; sourceTree = "<group>"; };
+		8EFD6A8816F54B8F002AC857 /* DailyCalendarCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarCourseView.m; sourceTree = "<group>"; };
 		C300D93216EFBDE600BFC043 /* DailyClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyClassViewController.h; sourceTree = "<group>"; };
 		C300D93316EFBDE600BFC043 /* DailyClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyClassViewController.m; sourceTree = "<group>"; };
 		C300D93F16EFC4FE00BFC043 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCourseViewController.h; path = classTime/AddCourseViewController.h; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				C300D94616EFCBC000BFC043 /* DailyCalendarTableViewController.m */,
 				C300D94916EFCCB400BFC043 /* DailyCalendarCell.h */,
 				C300D94A16EFCCB400BFC043 /* DailyCalendarCell.m */,
+				8EFD6A8716F54B8F002AC857 /* DailyCalendarCourseView.h */,
+				8EFD6A8816F54B8F002AC857 /* DailyCalendarCourseView.m */,
 			);
 			name = DailyCalendar;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				C300D95216F0015000BFC043 /* AddCourseCell.m in Sources */,
 				C300D9B316F0DA6400BFC043 /* AddCourseSelectWeekDaysViewController.m in Sources */,
 				C300D9B916F1110D00BFC043 /* Course.m in Sources */,
+				8EFD6A8916F54B8F002AC857 /* DailyCalendarCourseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

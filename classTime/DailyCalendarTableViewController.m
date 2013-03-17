@@ -10,6 +10,7 @@
 #import "DailyCalendarCell.h"
 #import "AddCourseViewController.h"
 #import "Course.h"
+#import "DailyCalendarCourseView.h"
 
 @interface DailyCalendarTableViewController ()
 
@@ -69,20 +70,21 @@
 
 - (NSString *)getWeekday:(NSInteger)weekday
 {
+    NSLog(@"%i", weekday);
     switch (weekday) {
-        case 0:
-            return @"Sunday";
         case 1:
-            return @"Monday";
+            return @"Sunday";
         case 2:
-            return @"Tuesday";
+            return @"Monday";
         case 3:
-            return @"Wednesday";
+            return @"Tuesday";
         case 4:
-            return @"Thursday";
+            return @"Wednesday";
         case 5:
-            return @"Friday";
+            return @"Thursday";
         case 6:
+            return @"Friday";
+        case 7:
             return @"Saturday";
         default:
             return @"null";
@@ -90,6 +92,11 @@
 }
 
 #pragma mark - Table view data source
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -163,23 +170,33 @@
     if (self.fetchedCourses.count == 0)
         return;
 
-    Course *course = [self.fetchedCourses objectAtIndex:0];
-    NSLog(@"%@", course.courseStartTime);
 
-    UIButton *test = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [test setTitle:course.courseTitle forState:UIControlStateNormal];
+    for (Course *course in self.fetchedCourses)
+    {
+        NSLog(@"%@", course.courseStartTime);
 
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-    NSDateComponents *components = [calendar components:(NSSecondCalendarUnit|NSMinuteCalendarUnit|NSHourCalendarUnit|NSWeekdayCalendarUnit) fromDate:course.courseStartTime];
-    CGFloat courseStartPercentage = ([components second] + 60 * [components minute] + 3600 * [components hour])/86400.0;
-    CGFloat courseStartHeight = courseStartPercentage * (self.tableView.contentSize.height-44) + 22;
-    NSLog(@"%i", [components hour]);
+//        UIButton *test = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [test setTitle:course.courseTitle forState:UIControlStateNormal];
+//        [test setBackgroundImage:[[UIImage imageNamed:@"greenButton@2x.png"] stretchableImageWithLeftCapWidth:36 topCapHeight:36] forState:UIControlStateNormal];
+//        [test setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//        [test setAlpha:0.8];
+        
 
-    CGFloat courseRectHeight = [course.courseLength integerValue]/1440.0 * (self.tableView.contentSize.height-44) + 22;
-    NSLog(@"%f", courseRectHeight);
-    [test setFrame:CGRectMake(44, courseStartHeight, self.tableView.frame.size.width-44, courseRectHeight)];
-    [self.tableView addSubview:test];
+        // Get Course Frame
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+        NSDateComponents *components = [calendar components:(NSSecondCalendarUnit|NSMinuteCalendarUnit|NSHourCalendarUnit|NSWeekdayCalendarUnit) fromDate:course.courseStartTime];
+        CGFloat courseStartPercentage = ([components second] + 60 * [components minute] + 3600 * [components hour])/86400.0;
+        CGFloat courseStartHeight = courseStartPercentage * (self.tableView.contentSize.height-80) + 40;
+        CGFloat courseRectHeight = [course.courseLength integerValue]/1440.0 * (self.tableView.contentSize.height-80) + 40;
+        CGRect courseFrame = CGRectMake(44, courseStartHeight, self.tableView.frame.size.width-44, courseRectHeight);
+        
+        DailyCalendarCourseView *test = [[DailyCalendarCourseView alloc] initWithFrame:courseFrame];
+        [test.title setText:course.courseTitle];
+        [test.type setText:[NSString stringWithFormat:@"Lec-%@", course.lectureNumber]];
+        
+        [self.tableView addSubview:test];
+    }
 
 }
 
