@@ -10,7 +10,7 @@
     "post": {
       "belongsTo": "Post"
     }
-  }
+  },
   "Images": {
     "name": {
       "string": [
