@@ -11,4 +11,12 @@
       "belongsTo": "Post"
     }
   }
+  "Images": {
+    "name": {
+      "string": [
+        "Thor",
+        "Loki"
+      ]
+    }
+  }
 }
